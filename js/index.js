@@ -110,7 +110,7 @@ function nextDiv(element) {
         document.getElementById("resultDiv").style.display = "block";
         usernameLabel.innerHTML = userName.value;
         passwordLabel.innerHTML = password.value;
-        photoLabel.append(photo.value);
+        photoLabel.src = photo.value.replace("C:\\fakepath\\", "./images/");
       }else{
         alert("Fill the correct input fields please")
       }
