@@ -266,7 +266,7 @@
 
         <label for="address"><b>Address</b></label>
         <input
-          type="text"
+          type="text" id="address-input"
           placeholder="Enter your Address"
           name="address"
           required
@@ -274,14 +274,14 @@
 
         <label for="houseNumber"><b>Hause Number</b></label>
         <input
-          type="text"
+          type="text" id = "house-number"
           placeholder="House Number"
           name="houseNumber"
           required
         />
 
         <label for="zipCode"><b>Zip Code</b></label>
-        <input type="text" placeholder="Zip Code" name="zipCode" required />
+        <input type="text" id="zip-code" placeholder="Zip Code" name="zipCode" required />
 
         <hr />
 
@@ -292,7 +292,7 @@
           class="registerbtn"
         >
           previous</button
-        ><button type="button" class="registerbtn" onclick="nextDiv(this)">
+        ><button type="button" id="addressBtn" class="registerbtn" onclick="nextDiv(this)">
           Next
         </button>
       </div>
@@ -304,7 +304,7 @@
 
         <label for="username"><b>User Name</b></label>
         <input
-          type="text"
+          type="text" id="user-name"
           placeholder="Enter your User Name"
           name="username"
           required
@@ -312,7 +312,7 @@
 
         <label for="password"><b>Password</b></label>
         <input
-          type="password"
+          type="password" id="password"
           placeholder="Enter Password"
           name="password"
           required
@@ -320,7 +320,7 @@
 
         <label for="password-repeat"><b>Repeat Password</b></label>
         <input
-          type="password"
+          type="password" id="repeat-password"
           placeholder="Repeat Password"
           name="password-repeat"
           required
@@ -328,7 +328,7 @@
 
         <label for="imageFile"><b>Profile Photo</b></label>
         <input
-          type="file"
+          type="file" id="photo"
           placeholder="choose your Photo"
           name="imageFile"
           required
@@ -337,7 +337,7 @@
 
         <button type="button" onclick="previous(this)" class="registerbtn">
           previous</button
-        ><button type="button" class="registerbtn" onclick="nextDiv(this)">
+        ><button type="button" id="profileBtn" class="registerbtn" onclick="nextDiv(this)">
           Next
         </button>
       </div>
