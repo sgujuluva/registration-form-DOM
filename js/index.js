@@ -75,6 +75,8 @@ function nextDiv(element) {
         name.innerHTML = firstName.value + lastName.value;
         birthDatelabel.innerHTML = birthDate.value;
         nationalitylabel.innerHTML = nationality.value;
+      }else{
+        alert("Fill the correct input fields please")
       }
 
       break;
@@ -89,6 +91,8 @@ function nextDiv(element) {
         document.getElementById("profileDiv").style.display = "block";
         document.getElementById("resultDiv").style.display = "none";
         addresslabel.innerHTML = address.value +  houseNumber.value  +  zipCode.value ;
+        }else{
+          alert("Fill the correct input fields please")
         }
 
       break;
@@ -107,6 +111,8 @@ function nextDiv(element) {
         usernameLabel.innerHTML = userName.value;
         passwordLabel.innerHTML = password.value;
         photoLabel.append(photo.value);
+      }else{
+        alert("Fill the correct input fields please")
       }
 
       break;
@@ -116,31 +122,3 @@ function nextDiv(element) {
   }
 }
 
-//check validatity
-/* function form(){
-
-  if(firstName.checkValidity() && lastName.checkValidity() &&birthDate.checkValidity() && nationality.checkValidity())
-  {
-    personalDiv.style.display = "none"
-    addressDiv.style.display = "block"
-  } else if(address.checkValidity() && houseNumber.checkValidity() && zipCode.checkValidity())
-  {
-        addressDiv.style.display = "none"
-    profileDiv.style.display = "block"
-  }else if(userName.checkValidity()&& password.checkValidity() && repeatPassword.checkValidity() &&photo.checkValidity() &&(password.value === repeatPassword.value)){
-    profileDiv.style.display = "none"
-    resultDiv.style.display = "block"
-  }
-  name.innerHTML = firstName.value+lastName.value;
-   birthDatelabel = 02/03/1972
-  nationalitylabel.innerHTML ="indi"
-  addresslabel.innerHTML="jsdjgh"
-  usernameLabel.innerHTML="hdslgh"
-  passwordLabel.innerHTML=""
-  photoLabel.innerHTML 
-}
-nextBtn.addEventListener("click",form );
-nextBtn1.addEventListener("click",form );
-nextBtn2.addEventListener("click",form );
-
- */
